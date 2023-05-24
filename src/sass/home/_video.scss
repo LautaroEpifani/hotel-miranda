@@ -1,0 +1,55 @@
+@use "../mixinsfunc";
+
+.video {
+  &__container {
+    background-color: #222222;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .text-section {
+      @include mixinsfunc.text-section;
+      color: #bead8e;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .title {
+      @include mixinsfunc.title;
+      color: #fff;
+      width: 80%;
+    }
+
+    .text {
+      @include mixinsfunc.text;
+      color: #c2c2c2;
+    }
+
+    .video {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 250px;
+      background-color: #e6e6e6;
+      position: relative;
+
+      .circle {
+        position: absolute;
+        background-color: #FFF;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    button {
+      @include mixinsfunc.custom-btn;
+      background-color: #bead8e;
+    }
+  }
+}

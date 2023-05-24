@@ -1,0 +1,40 @@
+@mixin text-section {
+  font-family: "Archivo", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin title {
+  font-family: "Old Standard TT", serif;
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@mixin text {
+  color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@mixin custom-btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@mixin custom-bgimg {
+width: 80%;
+height: 280px;
+margin: 0 auto;
+background-color: #E4E4E4;
+margin-top: 60px;
+}

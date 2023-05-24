@@ -1,0 +1,93 @@
+@use "../mixinsfunc";
+
+.rooms {
+  &__container {
+    text-align: center;
+    margin-top: 40px;
+
+    .text-section {
+      color: #777777;
+      @include mixinsfunc.text-section;
+      margin-bottom: 20px;
+    }
+    .title {
+      color: #222222;
+      @include mixinsfunc.title;
+      margin-bottom: 40px;
+    }
+    .slider-container {
+      height: 200px;
+      background-color: #e4e4e4;
+      position: relative;
+
+      .icons {
+        width: 70%;
+        position: absolute;
+        top: -5px;
+        left: 15%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        width: 25px;
+        height: 25px;
+        border: none;
+      }
+
+      .left {
+        left: 0;
+        background-color: #fff;
+      }
+
+      .right {
+        right: 0;
+        background-color: #bead8e;
+      }
+
+      .slider-bottom {
+        width: 70%;
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    .description {
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+
+      .title {
+        @include mixinsfunc.title;
+        font-size: 25px;
+      }
+
+      .text {
+        @include mixinsfunc.text;
+        margin-bottom: 20px;
+      }
+
+      .price {
+        color: #bead8e;
+      }
+      .night {
+        font-family: "Archivo", sans-serif;
+        font-size: 10px;
+      }
+
+    }
+  }
+}

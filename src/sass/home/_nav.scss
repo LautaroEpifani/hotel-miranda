@@ -1,0 +1,49 @@
+.nav {
+  &__container {
+    margin: 0 auto;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+
+    .icons-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+
+      .icons {
+        display: flex;
+        gap: 5px;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 40px;
+      box-shadow: 0 4px 2px -2px gray;
+
+      .logo {
+        display: flex;
+        gap: 10px;
+        .menu {
+          margin-right: 20px;
+        }
+        .logo-img {
+          box-shadow: 0 4px 20px -2px gray;
+        }
+        .text-hotel {
+          font-weight: 700;
+        }
+        .text-miranda {
+          font-weight: 500;
+        }
+      }
+      .icons-nav {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+

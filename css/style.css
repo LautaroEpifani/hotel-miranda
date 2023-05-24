@@ -1,0 +1,23 @@
+.nav__container {
+  margin: 0 auto;
+  color: #000;
+}
+
+.nav__container .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 375px;
+  min-width: 320px;
+} 
+
+/*# sourceMappingURL=style.css.map */

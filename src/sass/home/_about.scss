@@ -1,0 +1,85 @@
+@use "../mixinsfunc";
+
+.about {
+  &__container {
+    padding: 20px;
+    margin-top: 50px;
+    .text-section {
+      font-family: "Archivo", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #777777;
+    }
+
+    .title {
+      @include mixinsfunc.title;
+    }
+
+    .text {
+      @include mixinsfunc.text;
+    }
+
+    button {
+      @include mixinsfunc.custom-btn;
+      background-color: #bead8e;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .img {
+      @include mixinsfunc.custom-bgimg;
+    }
+
+    .team {
+      margin-bottom: 80px;
+    }
+
+    .description {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 60px;
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Old Standard TT", serif;
+        font-weight: 100;
+      }
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 20px;
+      }
+    }
+
+    .luxury {
+      .img-black {
+        @include mixinsfunc.custom-bgimg;
+        margin-top: 0px;
+        background-color: #222222;
+        text-align: center;
+        color: #fff;
+        padding-top: 40px;
+      }
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Old Standard TT", serif;
+        font-weight: 100;
+      }
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 20px;
+      }
+    }
+  }
+}

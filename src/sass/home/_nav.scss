@@ -1,8 +1,19 @@
+body {
+  position: relative;
+}
+
 .nav {
   &__container {
+    background-color: #FFF;
     margin: 0 auto;
     color: #000;
     font-family: "Raleway", sans-serif;
+    box-shadow: 0 4px 2px -2px gray;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-width: 375px;
+    top: 0;
 
     .icons-container {
       display: flex;
@@ -19,16 +30,32 @@
       display: flex;
       justify-content: space-between;
       padding: 10px;
-      padding-left: 20px;
+      padding-left: 10px;
       padding-right: 40px;
       box-shadow: 0 4px 2px -2px gray;
 
       .logo {
         display: flex;
         gap: 10px;
-        .menu {
+
+        .btn {
+          border: none;
+          background: none;
           margin-right: 20px;
+
+          &__menu--click {
+            display: none;
+          }
+
+          &__close {
+            display: none;
+
+            &--click {
+              display: none;
+            }
+          }
         }
+
         .logo-img {
           box-shadow: 0 4px 20px -2px gray;
         }
@@ -45,5 +72,31 @@
       }
     }
   }
-}
 
+  &__list {
+    display: none;
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+
+    &--active {
+      box-shadow: none;
+      display: block;
+    }
+  }
+
+  &__li {
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    color: #111111;
+    text-transform: capitalize;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+}

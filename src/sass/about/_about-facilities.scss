@@ -1,25 +1,32 @@
 @use "../mixinsfunc";
 
-.facilities {
+.about-facilities {
   &__container {
     margin-top: 60px;
     text-align: center;
     padding: 20px;
+    background-color: #222222;
+    color: #fff;
 
     .text-section {
       @include mixinsfunc.text-section;
-      color: #777777;
       margin-bottom: 20px;
+      color: #fff;
     }
 
     .title {
       @include mixinsfunc.title;
       margin-bottom: 0px;
+      text-align: center;
+      margin: 0;
+      width: 100%;
     }
 
     .card-slider-container {
-        text-align: left;
-        padding: 20px;
+      text-align: left;
+      background-color: #292929;
+      padding: 10px;
+
       .icon {
         margin-top: 90px;
       }
@@ -27,41 +34,43 @@
       .number {
         font-family: "Archivo", sans-serif;
         font-size: 120px;
-        color: #bdeff8;
-        opacity: 0.3;
+        color: #222222;
+        opacity: 1;
       }
 
       .card-slider {
-        margin-top: 50px;
+        margin-top: 10px;
         display: flex;
         justify-content: space-between;
+       
       }
 
       .title {
         font-size: 20px;
         margin-bottom: 20px;
         margin-top: 40px;
+        text-align: left;
       }
 
       .text {
         @include mixinsfunc.text;
         width: 70%;
+        color: #FFF;
+        font-family: 'Archivo', sans-serif;
       }
+    }
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 20px;
+    }
 
-      .dots {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        margin-top: 20px;
-      }
-
-      .dot {
-        width: 6px;
-        height: 6px;
-        background-color: #DBDBDB;
-        border-radius: 100%;
-
-      }
+    .dot {
+      width: 6px;
+      height: 6px;
+      background-color: #dbdbdb;
+      border-radius: 100%;
     }
   }
 }

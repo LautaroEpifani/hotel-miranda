@@ -1,0 +1,131 @@
+@use "../mixinsfunc";
+
+.hero {
+  &__container {
+    padding-right: 20px;
+
+    .text.text-about {
+      padding-bottom: 30px;
+
+      .title {
+        margin-top: 0;
+      }
+    }
+
+    .banner {
+      margin-left: auto;
+      width: 50%;
+      padding: 10px;
+      padding-right: 30px;
+      padding-left: 30px;
+      background-color: #fff;
+      font-family: "Archivo", sans-serif;
+      font-size: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .home {
+        color: #222222;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      .page {
+        color: #bead8e;
+      }
+
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.about-video {
+  &__container {
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    .video {
+      @include mixinsfunc.video;
+    }
+  }
+}
+
+.about-title {
+  @include mixinsfunc.title;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.about-cards {
+  padding: 20px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    gap: 20px;
+
+    .card {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 90%;
+      color: #222222;
+      text-align: center;
+    }
+
+    .card.brown {
+      background-color: #bead8e;
+    }
+
+    h6 {
+      font-family: "Archivo", sans-serif;
+      text-transform: uppercase;
+      color: #777777;
+      font-size: 10px;
+    }
+
+    .brown {
+      color: #fff;
+    }
+
+    .images {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      height: 55px;
+
+      .table {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.about-image {
+  margin-bottom: 30px;
+  height: 250px;
+  background-color: #e6e6e6;
+  width: 90%;
+  margin: 0 auto;
+}

@@ -1,0 +1,38 @@
+@use "../mixinsfunc";
+
+.services {
+  &__container {
+    margin-top: 20px;
+    padding: 20px;
+
+    .title {
+      @include mixinsfunc.title;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .container-grid {
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        gap: 20px;
+
+        h6 {
+          font-family: "Roboto", sans-serif;
+          color: #777777;
+          font-weight: 100;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

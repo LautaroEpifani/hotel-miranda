@@ -1,3 +1,5 @@
+
+
 @mixin text-section {
   font-family: "Archivo", sans-serif;
     font-size: 15px;
@@ -9,8 +11,6 @@
   font-family: "Old Standard TT", serif;
     font-size: 50px;
     font-weight: 100;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 @mixin text {
@@ -38,3 +38,27 @@ margin: 0 auto;
 background-color: #E4E4E4;
 margin-top: 60px;
 }
+
+@mixin video {
+  margin-top: 30px;
+    margin-bottom: 30px;
+    height: 250px;
+    background-color: #e6e6e6;
+    position: relative;
+  
+    .circle {
+      position: absolute;
+      background-color: #FFF;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+

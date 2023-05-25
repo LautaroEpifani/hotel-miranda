@@ -3,6 +3,7 @@
 .hero {
   &__container {
     background-color: #333333;
+    margin-top: 80px;
     .text {
       display: flex;
       flex-direction: column;
@@ -11,6 +12,7 @@
       color: #fff;
       padding-top: 60px;
       padding-bottom: 60px;
+     
 
       .description {
         width: 60%;
@@ -19,6 +21,7 @@
         letter-spacing: 2px;
         line-height: 20px;
         font-weight: 600;
+        text-transform: uppercase;
       }
 
       .title {

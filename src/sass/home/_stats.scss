@@ -1,0 +1,30 @@
+@use "../mixinsfunc";
+
+.stats {
+  &__container {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #222222;
+
+    .stats-card {
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: "Roboto", sans-serif;
+      .title {
+        color: #fff;
+        font-size: 50px;
+        margin-top: 20px;
+      }
+
+      .plus {
+        
+        font-size: 15px;
+      }
+
+      .text {
+        color: #999999;
+      }
+    }
+  }
+}

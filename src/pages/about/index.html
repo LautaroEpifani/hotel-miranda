@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css"" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;600;700&family=IM+Fell+Great+Primer:ital@1&family=Old+Standard+TT&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__container">
+        <div class="icons-container">
+          <p>9:41</p>
+          <div class="icons">
+            <span><i class="bi bi-bar-chart-fill"></i></span>
+            <span><i class="bi bi-wifi"></i></span>
+            <span><i class="bi bi-battery-full"></i></span>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="logo">
+            <button class="btn btn__menu" id="open">
+              <img src="../../assets/menu.png" alt="" width="18" />
+            </button>
+            <button class="btn btn__close--click" id="close">
+              <img src="../../assets/close.png" alt="" width="18" />
+            </button>
+            <img
+              class="logo-img"
+              src="../../assets/H.png"
+              alt=""
+              width="20"
+              height="20"
+            />
+            <div>
+              <h6 class="text-hotel">HOTEL</h6>
+              <h6 class="text-miranda">MIRANDA</h6>
+            </div>
+          </div>
+          <div class="icons-nav">
+            <span
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.2479 9.52286C15.1564 8.51071 15.7143 7.17786 15.7143 5.71429C15.7143 2.56357 13.1507 0 10 0C6.84929 0 4.28571 2.56357 4.28571 5.71429C4.28571 8.865 6.84929 11.4286 10 11.4286C11.1107 11.4286 12.145 11.105 13.0236 10.5543C16.1307 11.725 18.27 14.5686 18.5421 17.8571H1.45857C1.64357 15.6436 2.68214 13.5793 4.37143 12.1064C4.66929 11.8471 4.7 11.3964 4.44071 11.0986C4.18214 10.8014 3.73071 10.77 3.43286 11.0293C1.25071 12.9307 0 15.6793 0 18.5714C0 18.9664 0.32 19.2857 0.714286 19.2857H19.2857C19.6807 19.2857 20 18.9664 20 18.5714C20 14.6529 17.7286 11.1536 14.2479 9.52286ZM5.71429 5.71429C5.71429 3.35071 7.63643 1.42857 10 1.42857C12.3636 1.42857 14.2857 3.35071 14.2857 5.71429C14.2857 8.07786 12.3636 10 10 10C7.63643 10 5.71429 8.07786 5.71429 5.71429Z"
+                  fill="#111111"
+                />
+              </svg>
+            </span>
+            <span
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.8084 17.8179L14.3984 13.4078H14.3509C15.7102 11.8051 16.3971 9.73882 16.2679 7.64127C16.1388 5.54372 15.2035 3.57735 13.6579 2.15351C12.1122 0.729662 10.0759 -0.0413648 7.97477 0.00171254C5.87368 0.0447899 3.87064 0.898635 2.38464 2.38464C0.898635 3.87064 0.0447899 5.87368 0.00171254 7.97477C-0.0413648 10.0758 0.729662 12.1122 2.15351 13.6579C3.57735 15.2035 5.54372 16.1388 7.64127 16.2679C9.73882 16.3971 11.8051 15.7102 13.4078 14.3509C13.4078 14.3509 13.4078 14.3848 13.4078 14.3984L17.8179 18.8084C17.8809 18.872 17.956 18.9225 18.0386 18.9569C18.1213 18.9914 18.21 19.0091 18.2996 19.0091C18.3891 19.0091 18.4778 18.9914 18.5605 18.9569C18.6432 18.9225 18.7182 18.872 18.7813 18.8084C18.8508 18.7468 18.907 18.6716 18.9463 18.5874C18.9856 18.5033 19.0072 18.4119 19.0097 18.319C19.0123 18.2262 18.9957 18.1338 18.9611 18.0475C18.9265 17.9613 18.8745 17.8832 18.8084 17.8179ZM8.14964 14.9072C6.80775 14.9072 5.496 14.5093 4.38026 13.7638C3.26452 13.0183 2.3949 11.9586 1.88139 10.7189C1.36787 9.47915 1.23351 8.11498 1.4953 6.79887C1.75709 5.48277 2.40327 4.27385 3.35213 3.32499C4.30099 2.37613 5.50991 1.72995 6.82601 1.46816C8.14212 1.20637 9.50629 1.34073 10.746 1.85425C11.9858 2.36777 13.0454 3.23738 13.7909 4.35312C14.5364 5.46886 14.9344 6.78061 14.9344 8.1225C14.9344 9.01348 14.7589 9.89574 14.4179 10.7189C14.0769 11.5421 13.5772 12.29 12.9472 12.92C12.3171 13.55 11.5692 14.0498 10.746 14.3908C9.92288 14.7317 9.04062 14.9072 8.14964 14.9072Z"
+                  fill="#111111"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <ul class="nav__list" id="list">
+          <li class="nav__li nav__li--first">
+            <a class="nav__item" href="/src/pages/about/index.html">About&nbspUs</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="/src/pages/rooms/index.html">Rooms</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="/src/pages/offers/index.html">Offers</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="/src/pages/contact/index.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero__container">
+        <div class="text text-about">
+          <h6 class="description">The Ultimate Luxury</h6>
+          <h3 class="title">About Us</h3>
+        </div>
+        <div class="banner">
+          <a class="home" href="/src/pages/home/index.html">Home</a>
+          <span>|</span>
+          <h1 class="page">About</h1>
+        </div>
+      </div>
+      <div class="about-video__container">
+        <div class="video">
+          <div class="circle">
+            <svg
+              width="12"
+              height="14"
+              viewBox="0 0 12 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.20002 13.4006C1.11018 13.4006 1.02033 13.378 0.939083 13.3324C0.770854 13.2381 0.666687 13.0603 0.666687 12.8673V1.13398C0.666687 0.94101 0.770854 0.763145 0.939083 0.668874C1.10757 0.574343 1.31408 0.578249 1.47815 0.67877L11.0781 6.54544C11.2367 6.64257 11.3334 6.81497 11.3334 7.00065C11.3334 7.18632 11.2367 7.35872 11.0781 7.45585L1.47815 13.3225C1.39299 13.3746 1.29637 13.4006 1.20002 13.4006ZM1.73335 2.08502V11.9163L9.77711 7.00065L1.73335 2.08502Z"
+                fill="#111111"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <h1 class="about-title">
+        Hello. Our hotel has been present for over 20 years. We make the best
+        for all our customers
+      </h1>
+
+      <div class="about-cards">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="./assets/coffee.png" alt="" />
+              <h6 class="text">breakfast</h6>
+            </div>
+            <div class="card">
+              <img src="./assets/map.png" alt="" />
+              <h6 class="text">city guide</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card brown">
+              <img src="./assets/plane.png" alt="" />
+              <h6 class="brown">airport pickup</h6>
+            </div>
+            <div class="card">
+              <div class="images">
+                <img class="table" src="./assets/table.png" alt="" />
+                <img src="./assets/room.png" alt="" />
+              </div>
+              <h6 class="text">luxury room</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image"></div>
+      <div class="restaurant__container">
+        <h6>restaurant</h6>
+        <h1>Get Restaurant Facilities & Many Other More</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+          provident! ipsum dolw dowldr dolor sit, amet consectetur adipisicing
+          elit. Earum beatae officiis libero aliquid rem voluptatibus soluta
+          laudantium assumenda corrupti qui.
+        </p>
+        <button>Take a tour</button>
+      </div>
+      <div class="about-facilities__container">
+        <h6 class="text-section">Facilities</h6>
+        <h1 class="title">Core Features</h1>
+        <div class="card-slider-container">
+          <div class="card-slider">
+            <svg
+              class="icon"
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="70" height="70" fill="url(#pattern0)" />
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_67_618"
+                    transform="scale(0.0142857)"
+                  />
+                </pattern>
+                <image
+                  id="image0_67_618"
+                  width="70"
+                  height="70"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+            <h1 class="number">01</h1>
+          </div>
+          <h1 class="title">Have High Rating</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut
+            ipsa expedita accusantium doloribus nulla voluptate minus alias quas
+            numquam!
+          </p>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="counter__container">
+        <h4>counter</h4>
+        <h1>Some Fun Facts</h1>
+        <div class="counter-card">
+          <div class="card">
+            <img class="image-space" src="./assets/client.png" alt="" />
+            <div>
+              <h1>8000</h1>
+              <h6>Happy Users</h6>
+            </div>
+          </div>
+          <img src="./assets/arrow.png" alt="" width="25" height="10" />
+        </div>
+        <div class="counter-card">
+          <div class="card">
+            <div class="reviews">
+              <div class="stars">
+                <img src="./assets/small-star.png" alt="" />
+                <img src="./assets/big-star.png" alt="" />
+                <img src="./assets/small-star.png" alt="" />
+              </div>
+              <img src="./assets/rev.png" alt="" />
+            </div>
+            <div>
+              <h1>10M</h1>
+              <h6>Reviews & Appriciate</h6>
+            </div>
+          </div>
+          <img src="./assets/arrow.png" alt="" width="25" height="10" />
+        </div>
+        <div class="counter-card">
+          <div class="card">
+            <img class="image-space" src="./assets/planet.png" alt="" />
+            <div>
+              <h1>100</h1>
+              <h6>Country Coverage</h6>
+            </div>
+          </div>
+          <img src="./assets/arrow.png" alt="" width="25" height="10" />
+        </div>
+        <div class="about-image">
+        </div>
+      </div>
+      <div class="social__container">
+        <div class="container-logo">
+          <div class="logo"><img src="../../assets/H_nobg.png" alt="" /></div>
+          <h1 class="logo-title">
+            <span class="bold">Hotel</span><br/>Miranda
+          </h1>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          esse minima non eveniet hic dicta facilis reiciendis consequatur a et.
+          Nemo quos voluecessitatibus atque iure qui eveniet.
+        </p>
+        <div class="social-icons">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21.782 0H1.73748C0.778081 0 0 0.759521 0 1.6956V21.9747C0 22.9103 0.778081 23.6698 1.73748 23.6698H21.782C22.7428 23.6698 23.5209 22.9098 23.5209 21.9747V1.6956C23.5209 0.759045 22.7423 0 21.782 0ZM7.12931 19.8146H3.57679V9.12662H7.12931V19.8146ZM5.35329 7.66659H5.32949C4.13787 7.66659 3.36692 6.84568 3.36692 5.82014C3.36692 4.77175 4.16166 3.97368 5.37661 3.97368C6.59203 3.97368 7.33965 4.77175 7.36345 5.82014C7.36345 6.84568 6.59156 7.66659 5.35329 7.66659ZM19.9398 19.8146H16.3873V14.0954C16.3873 12.6592 15.8733 11.6788 14.5879 11.6788C13.6067 11.6788 13.0223 12.3398 12.7648 12.9785C12.6711 13.2064 12.6482 13.5253 12.6482 13.8451V19.8142H9.09569C9.09569 19.8142 9.14233 10.1279 9.09569 9.12615H12.6482V10.639C13.1203 9.91089 13.9645 8.87393 15.8505 8.87393C18.1876 8.87393 19.9403 10.402 19.9403 13.6852V19.8146H19.9398Z"
+              fill="#777777" />
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21.0678 0C22.6861 0 24 1.31391 24 2.93222V21.0678C24 22.6861 22.6861 24 21.0678 24H2.93222C1.31391 24 0 22.6861 0 21.0678V2.93222C0 1.31391 1.31386 0 2.93222 0H21.0678V0ZM21.3605 15.4995C21.4035 14.8515 21.3508 14.2328 21.2008 13.6404C21.0494 13.047 20.8066 12.518 20.4667 12.0556C20.1263 11.5922 19.6927 11.2221 19.1646 10.9487C18.6338 10.6718 18.0156 10.536 17.3091 10.536C16.6691 10.536 16.0912 10.6496 15.5671 10.8755C15.0435 11.1027 14.5939 11.4134 14.2144 11.8071C13.8359 12.1985 13.5474 12.6653 13.3397 13.2064C13.1355 13.7456 13.0312 14.3288 13.0312 14.9532C13.0312 15.5989 13.1316 16.1949 13.3308 16.7332C13.5323 17.2742 13.815 17.7349 14.1789 18.1245C14.5526 18.5129 14.9964 18.8102 15.5276 19.0228C16.0593 19.2323 16.6514 19.3388 17.3091 19.3388C18.253 19.3388 19.0625 19.1227 19.7269 18.6891C20.3993 18.2568 20.8914 17.5392 21.2163 16.534H19.1961C19.118 16.7923 18.9156 17.0413 18.5832 17.2742C18.2477 17.5077 17.8483 17.6244 17.3858 17.6244C16.7423 17.6244 16.2457 17.4558 15.9018 17.1203C15.5574 16.7847 15.3346 16.1599 15.3346 15.4995H21.3605ZM8.21423 19.1227C8.73173 19.1227 9.23634 19.0575 9.72225 18.9287C10.214 18.7996 10.652 18.6007 11.0341 18.3305C11.4132 18.0624 11.7207 17.715 11.9466 17.2862C12.1707 16.8624 12.2826 16.3591 12.2826 15.7742C12.2826 15.0526 12.1108 14.4375 11.7607 13.9231C11.4123 13.4123 10.8859 13.0532 10.1772 12.8491C10.6978 12.6023 11.0879 12.285 11.3532 11.898C11.6173 11.5102 11.7487 11.0251 11.7487 10.4446C11.7487 9.90802 11.6603 9.45403 11.485 9.09145C11.3048 8.72353 11.0532 8.4315 10.7319 8.2118C10.4053 7.99214 10.0196 7.83192 9.56695 7.73606C9.11203 7.63711 8.61408 7.58963 8.06245 7.58963H2.625V19.1227H8.21423ZM7.92487 13.9826C8.4712 13.9826 8.91544 14.1082 9.24919 14.3611C9.58158 14.6172 9.74934 15.0397 9.74934 15.6339C9.74934 15.9371 9.70008 16.1883 9.59756 16.3818C9.49547 16.5761 9.35437 16.7297 9.18483 16.8415C9.01439 16.9578 8.81334 17.0368 8.58614 17.0861C8.36245 17.1362 8.12456 17.1584 7.87472 17.1584H5.16398V13.9826H7.92487ZM18.5375 12.7324C18.2646 12.4311 17.8035 12.2677 17.2402 12.2677C16.8737 12.2677 16.5705 12.3294 16.3274 12.455C16.0895 12.5793 15.8951 12.7333 15.7464 12.9152C15.5982 13.0998 15.4979 13.2951 15.4389 13.5037C15.3803 13.707 15.3448 13.8911 15.3346 14.054H19.0661C19.0115 13.4691 18.8113 13.0364 18.5375 12.7324ZM7.54008 9.5543C7.76512 9.55434 7.98394 9.57028 8.19338 9.61111C8.40595 9.64795 8.5897 9.71541 8.75212 9.81352C8.91544 9.90802 9.04547 10.0425 9.14353 10.2147C9.23808 10.3869 9.28467 10.6088 9.28467 10.8768C9.28467 11.3606 9.14353 11.7125 8.85155 11.926C8.55642 12.1425 8.18363 12.2491 7.73405 12.2491H5.16398V9.5543H7.54008ZM19.54 9.50152V8.36358H14.865V9.50152H19.54Z"
+              fill="#777777" />
+          </svg>
+          <div class="bg-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 24H3C1.344 24 0 22.656 0 21V3C0 1.344 1.344 0 3 0H21C22.656 0 24 1.344 24 3V21C24 22.656 22.656 24 21 24ZM9.216 18.096C14.874 18.096 17.97 13.404 17.97 9.342C17.97 9.21 17.97 9.078 17.964 8.946C18.564 8.514 19.086 7.968 19.5 7.35C18.948 7.596 18.354 7.758 17.73 7.836C18.366 7.458 18.852 6.852 19.086 6.132C18.492 6.486 17.832 6.738 17.13 6.876C16.566 6.276 15.768 5.904 14.886 5.904C13.188 5.904 11.808 7.284 11.808 8.982C11.808 9.222 11.838 9.456 11.886 9.684C9.33 9.558 7.062 8.328 5.544 6.468C5.28 6.924 5.13 7.452 5.13 8.016C5.13 9.084 5.676 10.026 6.498 10.578C5.994 10.56 5.52 10.422 5.106 10.194V10.236C5.106 11.724 6.168 12.972 7.572 13.254C7.314 13.326 7.044 13.362 6.762 13.362C6.564 13.362 6.372 13.344 6.186 13.308C6.576 14.532 7.716 15.42 9.06 15.444C8.004 16.272 6.678 16.764 5.238 16.764C4.992 16.764 4.746 16.752 4.506 16.722C5.862 17.586 7.482 18.096 9.216 18.096Z"
+                fill="white" />
+            </svg>
+          </div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21.0678 0C22.6861 0 24 1.31391 24 2.93222V21.0678C24 22.6861 22.6861 24 21.0678 24H16.0771V14.9571H19.199L19.793 11.0843H16.0771V8.57095C16.0771 7.51144 16.5961 6.47864 18.2605 6.47864H19.95V3.18145C19.95 3.18145 18.4167 2.9198 16.9508 2.9198C13.8905 2.9198 11.8902 4.77459 11.8902 8.13248V11.0843H8.48836V14.9571H11.8902V24H2.93222C1.31391 24 0 22.6861 0 21.0678V2.93222C0 1.31391 1.31386 0 2.93222 0H21.0678V0Z"
+              fill="#777777" />
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21.0678 0C22.6861 0 24 1.31391 24 2.93222V21.0678C24 22.6861 22.6861 24 21.0678 24H2.93222C1.31391 24 0 22.6861 0 21.0678V2.93222C0 1.31391 1.31386 0 2.93222 0H21.0678V0ZM20.085 8.23266C19.8909 7.50661 19.3192 6.93483 18.5931 6.74081C17.277 6.38812 12 6.38812 12 6.38812C12 6.38812 6.72305 6.38812 5.40689 6.74081C4.68098 6.93483 4.10911 7.50661 3.91505 8.23266C3.5625 9.54867 3.5625 12.2945 3.5625 12.2945C3.5625 12.2945 3.5625 15.0402 3.91505 16.3561C4.10911 17.0821 4.68098 17.6541 5.40689 17.8481C6.72305 18.2006 12 18.2006 12 18.2006C12 18.2006 17.277 18.2006 18.5931 17.8481C19.3192 17.6541 19.8909 17.0821 20.085 16.3561C20.4375 15.0402 20.4375 12.2945 20.4375 12.2945C20.4375 12.2945 20.4375 9.54867 20.085 8.23266ZM10.3124 14.8258V9.76317L14.6966 12.2945L10.3124 14.8258Z"
+              fill="#777777" />
+          </svg>
+        </div>
+      </div>
+      <div class="services__container">
+        <h1 class="title">Services.</h1>
+        <div class="container-grid">
+          <div class="row">
+            <div class="column">
+              <h6><span>+ </span>Resturent & Bar</h6>
+              <h6><span>+ </span>Swimming Pool</h6>
+              <h6><span>+ </span>Welhness & Spa</h6>
+              <h6><span>+ </span>Restaurant</h6>
+              <h6><span>+ </span>Conference Room</h6>
+              <h6><span>+ </span>Coctail Party House</h6>
+            </div>
+            <div class="column">
+              <h6><span>+ </span>Gaming Zone</h6>
+              <h6><span>+ </span>Marrige Party</h6>
+              <h6><span>+ </span>Party Planning</h6>
+              <h6><span>+ </span>Tour Consultancy</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__container">
+        <h1 class="title">Contact Us.</h1>
+        <div class="card-contact">
+          <img src="../../assets/phone.png" alt="" />
+          <div>
+            <h1 class="title">Phone Number</h1>
+            <h6 class="text">+984 654 864 17 434</h6>
+          </div>
+        </div>
+        <div class="card-contact">
+          <img src="../../assets/message.png" alt="" />
+          <div>
+            <h1 class="title">Email</h1>
+            <h6 class="text">hotelmiranda@gmail.com</h6>
+          </div>
+        </div>
+        <div class="card-contact">
+          <img src="../../assets/map.png" alt="" />
+          <div>
+            <h1 class="title">Find Us</h1>
+            <h6 class="text">Crazy Avenue 54, Oklahoma</h6>
+          </div>
+        </div>
+      </div>
+      <div class="footer__container">
+        <h6 class="title">Copyright © Hotel Miranda 2023</h6>
+        <div class="text-container">
+          <h6>Terms of use</h6>
+          <span>|</span>
+          <h6>Privacy Environmental Policy</h6>
+        </div>
+      </div>
+    </main>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/router.js"></script>
+  </body>
+</html>

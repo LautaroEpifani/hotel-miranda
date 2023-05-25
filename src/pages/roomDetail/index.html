@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Detail</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;600;700&family=IM+Fell+Great+Primer:ital@1&family=Old+Standard+TT&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav__container">
+        <div class="icons-container">
+          <p>9:41</p>
+          <div class="icons">
+            <span><i class="bi bi-bar-chart-fill"></i></span>
+            <span><i class="bi bi-wifi"></i></span>
+            <span><i class="bi bi-battery-full"></i></span>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="logo">
+            <button class="btn btn__menu" id="open">
+              <img src="../../assets/menu.png" alt="" width="18" />
+            </button>
+            <button class="btn btn__close--click" id="close">
+              <img src="../../assets/close.png" alt="" width="18" />
+            </button>
+            <img
+              class="logo-img"
+              src="../../assets/H.png"
+              alt=""
+              width="20"
+              height="20"
+            />
+            <div>
+              <h6 class="text-hotel">HOTEL</h6>
+              <h6 class="text-miranda">MIRANDA</h6>
+            </div>
+          </div>
+          <div class="icons-nav">
+            <span
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.2479 9.52286C15.1564 8.51071 15.7143 7.17786 15.7143 5.71429C15.7143 2.56357 13.1507 0 10 0C6.84929 0 4.28571 2.56357 4.28571 5.71429C4.28571 8.865 6.84929 11.4286 10 11.4286C11.1107 11.4286 12.145 11.105 13.0236 10.5543C16.1307 11.725 18.27 14.5686 18.5421 17.8571H1.45857C1.64357 15.6436 2.68214 13.5793 4.37143 12.1064C4.66929 11.8471 4.7 11.3964 4.44071 11.0986C4.18214 10.8014 3.73071 10.77 3.43286 11.0293C1.25071 12.9307 0 15.6793 0 18.5714C0 18.9664 0.32 19.2857 0.714286 19.2857H19.2857C19.6807 19.2857 20 18.9664 20 18.5714C20 14.6529 17.7286 11.1536 14.2479 9.52286ZM5.71429 5.71429C5.71429 3.35071 7.63643 1.42857 10 1.42857C12.3636 1.42857 14.2857 3.35071 14.2857 5.71429C14.2857 8.07786 12.3636 10 10 10C7.63643 10 5.71429 8.07786 5.71429 5.71429Z"
+                  fill="#111111"
+                />
+              </svg>
+            </span>
+            <span
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.8084 17.8179L14.3984 13.4078H14.3509C15.7102 11.8051 16.3971 9.73882 16.2679 7.64127C16.1388 5.54372 15.2035 3.57735 13.6579 2.15351C12.1122 0.729662 10.0759 -0.0413648 7.97477 0.00171254C5.87368 0.0447899 3.87064 0.898635 2.38464 2.38464C0.898635 3.87064 0.0447899 5.87368 0.00171254 7.97477C-0.0413648 10.0758 0.729662 12.1122 2.15351 13.6579C3.57735 15.2035 5.54372 16.1388 7.64127 16.2679C9.73882 16.3971 11.8051 15.7102 13.4078 14.3509C13.4078 14.3509 13.4078 14.3848 13.4078 14.3984L17.8179 18.8084C17.8809 18.872 17.956 18.9225 18.0386 18.9569C18.1213 18.9914 18.21 19.0091 18.2996 19.0091C18.3891 19.0091 18.4778 18.9914 18.5605 18.9569C18.6432 18.9225 18.7182 18.872 18.7813 18.8084C18.8508 18.7468 18.907 18.6716 18.9463 18.5874C18.9856 18.5033 19.0072 18.4119 19.0097 18.319C19.0123 18.2262 18.9957 18.1338 18.9611 18.0475C18.9265 17.9613 18.8745 17.8832 18.8084 17.8179ZM8.14964 14.9072C6.80775 14.9072 5.496 14.5093 4.38026 13.7638C3.26452 13.0183 2.3949 11.9586 1.88139 10.7189C1.36787 9.47915 1.23351 8.11498 1.4953 6.79887C1.75709 5.48277 2.40327 4.27385 3.35213 3.32499C4.30099 2.37613 5.50991 1.72995 6.82601 1.46816C8.14212 1.20637 9.50629 1.34073 10.746 1.85425C11.9858 2.36777 13.0454 3.23738 13.7909 4.35312C14.5364 5.46886 14.9344 6.78061 14.9344 8.1225C14.9344 9.01348 14.7589 9.89574 14.4179 10.7189C14.0769 11.5421 13.5772 12.29 12.9472 12.92C12.3171 13.55 11.5692 14.0498 10.746 14.3908C9.92288 14.7317 9.04062 14.9072 8.14964 14.9072Z"
+                  fill="#111111"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <ul class="nav__list" id="list">
+          <li class="nav__li nav__li--first">
+            <a class="nav__item" href="/src/pages/about/index.html"
+              >About&nbspUs</a
+            >
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="/src/pages/rooms/index.html">Rooms</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="/src/pages/offers/index.html">Offers</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="/src/pages/contact/index.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero__container">
+        <div class="text text-rooms">
+          <h6 class="description">The Ultimate Luxury</h6>
+          <h3 class="title">Ultimate Room</h3>
+        </div>
+        <div class="banner">
+          <a class="home" href="/src/pages/home/index.html">Home</a>
+          <span>|</span>
+          <h1 class="page">Room Details</h1>
+        </div>
+      </div>
+      <div class="double-bed__container">
+        <h6>Double bed</h6>
+        <h1>Luxury Double Bed</h1>
+        <h1 class="price">$345<span class="night">/Night</span></h1>
+        <div class="image"></div>
+        <div class="date-check__globalcontainer">
+          <h1 class="title">Check Avaliability</h1>
+          <div class="container">
+            <div class="container-input">
+              <label for="">Check In</label>
+              <div class="input">
+                <h5>Fri. 14th June 2023</h5>
+                <i class="bi bi-calendar"></i>
+              </div>
+            </div>
+            <div class="container-input">
+              <label for="">Check Out</label>
+              <div class="input">
+                <h5>Sun, 16th June 2023</h5>
+                <i class="bi bi-calendar"></i>
+              </div>
+            </div>
+            <button class="btn-check">Check availability</button>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vitae,
+            suscipit expedita quaerat repudiandae, magnam, voluptate saepe
+            placeat magni eveniet quo repellat! Tenetur, facere. Magni molestias
+            distinctio nostrum quam eaque corporis cupiditate neque suscipit?
+            Sint possimus culpa sed mollitia voluptatum doloremque beatae rerum
+            esse nemo in debitis id accusantium iure, nihil recusandae vitae
+            illo quos ut aliquid omnis sapiente? Facere minima eum ut culpa fuga
+            deleniti veritatis eaque eligendi, dolores inventore consequatur
+            provident nesciunt modi. Adipisci, ratione quasi minima
+            reprehenderit tenetur et praesentium aliquid! Blanditiis fugiat vel
+            dolorem illo, numquam est suscipit odit consequatur, labore
+            aspernatur esse corporis consectetur excepturi.
+          </p>
+        </div>
+      </div>
+      <div class="amenities__container">
+        <h1 class="title">Amenities</h1>
+        <div class="container-grid">
+            <div class="row">
+                <div class="column">
+                    <h6><span>+ </span>Air conditioner</h6>
+                    <h6><span>+ </span>Breakfast</h6>
+                    <h6><span>+ </span>Cleaning</h6>
+                    <h6><span>+ </span>Grocery</h6>
+                    <h6><span>+ </span>Shop near</h6>
+                    <h6><span>+ </span>24/7 Online Support</h6>
+                    <h6><span>+ </span>Smart Security</h6>
+                </div>
+                <div class="column">
+                    <h6><span>+ </span>High speed Wifi</h6>
+                    <h6><span>+ </span>Kitchen</h6>
+                    <h6><span>+ </span>Shower</h6>
+                    <h6><span>+ </span>Single Bed</h6>
+                    <h6><span>+ </span>Towers</h6>
+                    <h6><span>+ </span>Stron Locker</h6>
+                    <h6><span>+ </span>Expert Team</h6>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/index.js"></script>
+    <script src="../js/router.js"></script>
+  </body>
+</html>

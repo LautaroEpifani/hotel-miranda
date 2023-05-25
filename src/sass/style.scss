@@ -3,6 +3,20 @@
 @use 'home/about';
 @use 'home/rooms';
 @use 'home/video';
+@use 'home/facilities';
+@use 'home/menu';
+@use 'home/stats';
+@use 'home/social';
+@use 'home/services';
+@use 'home/contact';
+@use 'home/footer';
+@use 'about/about-hero';
+@use 'about/restaurant';
+@use 'about/about-facilities';
+@use 'about/counter';
+@use 'rooms/room-hero';
+@use 'roomDetail/doubleBed';
+@use 'roomDetail/amenities';
 
 * {
     box-sizing: border-box;

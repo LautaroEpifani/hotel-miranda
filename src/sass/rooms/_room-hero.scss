@@ -1,0 +1,113 @@
+@use "../mixinsfunc";
+
+.hero {
+  &__container {
+    padding-right: 20px;
+
+    .text.text-rooms {
+      padding-bottom: 30px;
+
+      .title {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.room-cards {
+  &__container {
+    margin-top: 40px;
+    padding: 20px;
+    .room-card {
+      margin-bottom: 60px;
+      .slider-container {
+        height: 200px;
+        background-color: #e4e4e4;
+        position: relative;
+
+        .icons {
+          width: 70%;
+          position: absolute;
+          top: 90%;
+          left: 15%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .description {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .title {
+          @include mixinsfunc.title;
+          font-size: 25px;
+          margin-bottom: 20px;
+        }
+
+        .text {
+          @include mixinsfunc.text;
+          margin-bottom: 20px;
+        }
+
+        .text-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+
+          h6 {
+            font-size: 15px;
+            color: #bdbdbd;
+            font-family: "Archivo", sans-serif;
+          }
+        }
+
+        .price {
+          color: #bead8e;
+          font-size: 20px;
+        }
+
+        .night {
+          font-family: "Archivo", sans-serif;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .pagination {
+      padding: 0;
+      width: 100%;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 900;
+      color: #222222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+     
+    }
+
+    .pagination li {
+      display: flex;
+    }
+
+    .pagination li a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .pagination li a.active {
+      background-color: #bead8e;
+      color: white;
+    }
+  }
+}

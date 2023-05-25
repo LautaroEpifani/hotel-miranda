@@ -13,6 +13,7 @@
 
     .title {
       @include mixinsfunc.title;
+      margin-bottom: 20px;
     }
 
     .text {

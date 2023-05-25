@@ -1,7 +1,18 @@
+body {
+  position: relative;
+}
+
 .nav__container {
+  background-color: #FFF;
   margin: 0 auto;
   color: #000;
   font-family: "Raleway", sans-serif;
+  box-shadow: 0 4px 2px -2px gray;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 375px;
+  top: 0;
 }
 .nav__container .icons-container {
   display: flex;
@@ -16,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 40px;
   box-shadow: 0 4px 2px -2px gray;
 }
@@ -24,8 +35,19 @@
   display: flex;
   gap: 10px;
 }
-.nav__container .navbar .logo .menu {
+.nav__container .navbar .logo .btn {
+  border: none;
+  background: none;
   margin-right: 20px;
+}
+.nav__container .navbar .logo .btn__menu--click {
+  display: none;
+}
+.nav__container .navbar .logo .btn__close {
+  display: none;
+}
+.nav__container .navbar .logo .btn__close--click {
+  display: none;
 }
 .nav__container .navbar .logo .logo-img {
   box-shadow: 0 4px 20px -2px gray;
@@ -40,9 +62,33 @@
   display: flex;
   gap: 10px;
 }
+.nav__list {
+  display: none;
+  margin-top: 20px;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.nav__list--active {
+  box-shadow: none;
+  display: block;
+}
+.nav__li {
+  padding-bottom: 10px;
+}
+.nav__item {
+  color: #111111;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
 
 .hero__container {
   background-color: #333333;
+  margin-top: 80px;
 }
 .hero__container .text {
   display: flex;
@@ -60,6 +106,7 @@
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .hero__container .text .title {
   font-family: "Old Standard TT", serif;
@@ -150,8 +197,7 @@
   font-family: "Old Standard TT", serif;
   font-size: 50px;
   font-weight: 100;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .about__container .text {
   color: #777777;
@@ -244,8 +290,6 @@
   font-family: "Old Standard TT", serif;
   font-size: 50px;
   font-weight: 100;
-  margin-top: 10px;
-  margin-bottom: 10px;
   margin-bottom: 40px;
 }
 .rooms__container .slider-container {
@@ -302,8 +346,6 @@
   font-family: "Old Standard TT", serif;
   font-size: 50px;
   font-weight: 100;
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 25px;
 }
 .rooms__container .description .text {
@@ -326,6 +368,7 @@
   padding: 20px;
   padding-top: 60px;
   padding-bottom: 40px;
+  margin-top: 40px;
 }
 .video__container .text-section {
   font-family: "Archivo", sans-serif;
@@ -340,10 +383,9 @@
   font-family: "Old Standard TT", serif;
   font-size: 50px;
   font-weight: 100;
-  margin-top: 10px;
-  margin-bottom: 10px;
   color: #fff;
   width: 80%;
+  margin-bottom: 20px;
 }
 .video__container .text {
   color: #777777;
@@ -383,6 +425,811 @@
   font-weight: 600;
   letter-spacing: 2px;
   background-color: #bead8e;
+  border: none;
+}
+
+.facilities__container {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+}
+.facilities__container .text-section {
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 20px;
+}
+.facilities__container .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+.facilities__container .card-slider-container {
+  text-align: left;
+  padding: 20px;
+}
+.facilities__container .card-slider-container .icon {
+  margin-top: 90px;
+}
+.facilities__container .card-slider-container .number {
+  font-family: "Archivo", sans-serif;
+  font-size: 120px;
+  color: #bdeff8;
+  opacity: 0.3;
+}
+.facilities__container .card-slider-container .card-slider {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.facilities__container .card-slider-container .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.facilities__container .card-slider-container .text {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  width: 70%;
+}
+.facilities__container .card-slider-container .dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.facilities__container .card-slider-container .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #DBDBDB;
+  border-radius: 100%;
+}
+
+.menu__container-icon {
+  margin-top: 40px;
+}
+.menu__container-icon .food-icon {
+  text-align: right;
+  padding: 0;
+}
+.menu__container-icon .container-menu {
+  padding: 20px;
+}
+.menu__container-icon .container-menu .text-section {
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.menu__container-icon .container-menu .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.menu__container-icon .container-menu .card-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.menu__container-icon .container-menu .card-menu .img {
+  width: 40%;
+  height: 130px;
+  background-color: #dbdbdb;
+}
+.menu__container-icon .container-menu .card-menu .text-container {
+  width: 60%;
+}
+.menu__container-icon .container-menu .card-menu .subtitle {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.menu__container-icon .container-menu .card-menu .text {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #222222;
+  font-size: 13px;
+  line-height: 25px;
+}
+.menu__container-icon .container-menu .slider-container {
+  margin-top: 40px;
+}
+.menu__container-icon .container-menu .slider-container .container-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+.menu__container-icon .container-menu .slider-container button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__container-icon .container-menu .slider-container .left {
+  background-color: #F8F8F8;
+}
+.menu__container-icon .container-menu .slider-container .right {
+  background-color: #bead8e;
+}
+.menu__container-icon .container-menu .slider-container .slider {
+  height: 300px;
+  background-color: #EDEDED;
+}
+
+.stats__container {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #222222;
+}
+.stats__container .stats-card {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.stats__container .stats-card .title {
+  color: #fff;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.stats__container .stats-card .plus {
+  font-size: 15px;
+}
+.stats__container .stats-card .text {
+  color: #999999;
+}
+
+.social__container {
+  padding: 20px;
+  margin-top: 60px;
+}
+.social__container .container-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.social__container .logo {
+  padding: 24px;
+  padding-right: 28px;
+  padding-left: 28px;
+  background-color: #bead8e;
+  box-shadow: 0 4px 20px -2px gray;
+}
+.social__container .logo-title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.social__container .bold {
+  font-weight: 600;
+}
+.social__container .text {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  line-height: 25px;
+}
+.social__container .social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+.social__container .social-icons .bg-icon {
+  background-color: #bead8e;
+  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.services__container {
+  margin-top: 20px;
+  padding: 20px;
+}
+.services__container .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.services__container .container-grid .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.services__container .container-grid .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  gap: 20px;
+}
+.services__container .container-grid .column h6 {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.contact__container {
+  margin-top: 40px;
+  padding: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.contact__container .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.contact__container .card-contact {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.contact__container .card-contact .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.contact__container .card-contact .text {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-weight: 100;
+}
+
+.footer__container {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+  font-size: 20px;
+}
+.footer__container .text-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero__container {
+  padding-right: 20px;
+}
+.hero__container .text.text-about {
+  padding-bottom: 30px;
+}
+.hero__container .text.text-about .title {
+  margin-top: 0;
+}
+.hero__container .banner {
+  margin-left: auto;
+  width: 50%;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.hero__container .banner .home {
+  color: #222222;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.hero__container .banner .page {
+  color: #bead8e;
+}
+.hero__container .banner span {
+  font-size: 25px;
+}
+
+.about-video__container {
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.about-video__container .video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 250px;
+  background-color: #e6e6e6;
+  position: relative;
+}
+.about-video__container .video .circle {
+  position: absolute;
+  background-color: #FFF;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.about-cards {
+  padding: 20px;
+}
+.about-cards .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.about-cards .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  gap: 20px;
+}
+.about-cards .column .card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  color: #222222;
+  text-align: center;
+}
+.about-cards .column .card.brown {
+  background-color: #bead8e;
+}
+.about-cards .column h6 {
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 10px;
+}
+.about-cards .column .brown {
+  color: #fff;
+}
+.about-cards .column .images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 55px;
+}
+.about-cards .column .images .table {
+  width: 20px;
+}
+
+.about-image {
+  margin-bottom: 30px;
+  height: 250px;
+  background-color: #e6e6e6;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.restaurant__container {
+  padding: 20px;
+  margin-top: 20px;
+}
+.restaurant__container h6 {
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #777777;
+}
+.restaurant__container h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.restaurant__container p {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.restaurant__container button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #bead8e;
+}
+
+.about-facilities__container {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  background-color: #222222;
+  color: #fff;
+}
+.about-facilities__container .text-section {
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.about-facilities__container .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+.about-facilities__container .card-slider-container {
+  text-align: left;
+  background-color: #292929;
+  padding: 10px;
+}
+.about-facilities__container .card-slider-container .icon {
+  margin-top: 90px;
+}
+.about-facilities__container .card-slider-container .number {
+  font-family: "Archivo", sans-serif;
+  font-size: 120px;
+  color: #222222;
+  opacity: 1;
+}
+.about-facilities__container .card-slider-container .card-slider {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-facilities__container .card-slider-container .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: left;
+}
+.about-facilities__container .card-slider-container .text {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  width: 70%;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+}
+.about-facilities__container .dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.about-facilities__container .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #dbdbdb;
+  border-radius: 100%;
+}
+
+.counter__container {
+  padding: 20px;
+  margin-top: 40px;
+}
+.counter__container h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #777777;
+}
+.counter__container h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.counter__container .counter-card {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.counter__container .counter-card .card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.counter__container .counter-card .card .image-space {
+  margin-right: 10px;
+}
+.counter__container .counter-card .card h1 {
+  margin: 0;
+}
+.counter__container .counter-card .card h6 {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 100;
+}
+.counter__container .about-image {
+  margin-bottom: 30px;
+  height: 250px;
+  background-color: #e6e6e6;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero__container {
+  padding-right: 20px;
+}
+.hero__container .text.text-rooms {
+  padding-bottom: 30px;
+}
+.hero__container .text.text-rooms .title {
+  margin-top: 0;
+}
+
+.room-cards__container {
+  margin-top: 40px;
+  padding: 20px;
+}
+.room-cards__container .room-card {
+  margin-bottom: 60px;
+}
+.room-cards__container .room-card .slider-container {
+  height: 200px;
+  background-color: #e4e4e4;
+  position: relative;
+}
+.room-cards__container .room-card .slider-container .icons {
+  width: 70%;
+  position: absolute;
+  top: 90%;
+  left: 15%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.room-cards__container .room-card .description {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.room-cards__container .room-card .description .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.room-cards__container .room-card .description .text {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.room-cards__container .room-card .description .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.room-cards__container .room-card .description .text-container h6 {
+  font-size: 15px;
+  color: #bdbdbd;
+  font-family: "Archivo", sans-serif;
+}
+.room-cards__container .room-card .description .price {
+  color: #bead8e;
+  font-size: 20px;
+}
+.room-cards__container .room-card .description .night {
+  font-family: "Archivo", sans-serif;
+  font-size: 10px;
+}
+.room-cards__container .pagination {
+  padding: 0;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.room-cards__container .pagination li {
+  display: flex;
+}
+.room-cards__container .pagination li a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.room-cards__container .pagination li a.active {
+  background-color: #bead8e;
+  color: white;
+}
+
+.double-bed__container {
+  padding: 20px;
+  margin-top: 30px;
+}
+.double-bed__container h6 {
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #777777;
+}
+.double-bed__container h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.double-bed__container .price {
+  font-family: "Archivo", sans-serif;
+  color: #bead8e;
+  font-weight: 900;
+}
+.double-bed__container .night {
+  font-size: 10px;
+}
+.double-bed__container .image {
+  height: 250px;
+  background-color: #efefef;
+}
+.double-bed__container .date-check__globalcontainer {
+  margin-top: 40px;
+}
+.double-bed__container .date-check__globalcontainer h1 {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+}
+.double-bed__container .date-check__globalcontainer .container {
+  margin-top: 20px;
+  padding: 20px;
+  color: #000;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.double-bed__container .date-check__globalcontainer .container .container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.double-bed__container .date-check__globalcontainer .container .container-input .input {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #777777;
+  background: #f8f8f8;
+  font-size: 14px;
+  font-family: "Archivo", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.double-bed__container .date-check__globalcontainer .container .container-input .input-icon {
+  font-weight: 100;
+  color: #000;
+}
+.double-bed__container .date-check__globalcontainer .container .btn-check {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #bead8e;
+  border: none;
+}
+.double-bed__container .text {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.amenities__container {
+  margin-top: 20px;
+  padding: 20px;
+}
+.amenities__container .title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.amenities__container .container-grid .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.amenities__container .container-grid .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  gap: 20px;
+}
+.amenities__container .container-grid .column h6 {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  font-weight: 100;
+  font-size: 14px;
 }
 
 * {

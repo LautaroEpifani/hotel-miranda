@@ -1,0 +1,107 @@
+@use "../mixinsfunc";
+
+.cancellation-related {
+  &__container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    h1 {
+      @include mixinsfunc.title;
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+    p {
+      @include mixinsfunc.text;
+    }
+
+    .cancellation {
+      margin-bottom: 80px;
+    }
+
+
+    .slider-container {
+      height: 200px;
+      background-color: #e4e4e4;
+      position: relative;
+     
+
+      .icons {
+        width: 70%;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      button {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        transform: translate(0, -50%);
+        border: none;
+      }
+
+      .left {
+        left: 0;
+        background-color: #fff;
+      }
+
+      .right {
+        right: 0;
+        background-color: #bead8e;
+      }
+    }
+
+    .description {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 50px;
+   
+      
+
+      .title {
+        @include mixinsfunc.title;
+        font-size: 25px;
+        margin-bottom: 20px;
+    
+      }
+
+      .text {
+        @include mixinsfunc.text;
+        margin-bottom: 20px;
+       
+      }
+
+      .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        gap: 20px;
+
+        h6 {
+          font-size: 15px;
+          color: #bdbdbd;
+          font-family: "Archivo", sans-serif;
+        }
+        .price {
+          color: #bead8e;
+          font-size: 20px;
+            font-family: "Archivo", sans-serif;
+            font-weight: 900;
+        }
+
+        .night {
+          font-family: "Archivo", sans-serif;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

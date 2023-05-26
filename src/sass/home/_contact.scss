@@ -6,11 +6,12 @@
     padding: 20px;
     padding-bottom: 10px;
     margin-bottom: 0px;
+    
 
     .title {
       @include mixinsfunc.title;
       font-size: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .card-contact {

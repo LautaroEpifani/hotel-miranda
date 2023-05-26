@@ -1,0 +1,163 @@
+@use "../mixinsfunc";
+
+.double-bed__container {
+  .image {
+    height: 200px;
+    margin-bottom: 20px;
+    padding-top: 35%;
+    text-align: end;
+    padding-right: 10px;
+
+    h2 {
+      font-family: "Archivo", sans-serif;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .original-container {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      margin-bottom: 10px;
+      color: #bead8e;
+    }
+
+    .original {
+      margin: 0;
+      padding: 0;
+      text-decoration: line-through;
+    }
+
+    .discount {
+      color: #de5777;
+      font-size: 35px;
+    }
+
+    .night {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.amenities {
+  &__container {
+    button {
+      @include mixinsfunc.custom-btn;
+      margin-top: 50px;
+      border: none;
+      background-color: #bead8e;
+    }
+  }
+}
+
+.popular {
+  &__container {
+    padding: 40px 20px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    background-color: #222222;
+
+    h1 {
+      @include mixinsfunc.title;
+      text-align: center;
+      color: #FFF;
+      font-size: 30px;
+    margin-bottom: 20px;
+    }
+    h5 {
+      @include mixinsfunc.text-section;
+      text-align: center;
+      color: #bead8e;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .slider-global {
+        background-color: #FFF;
+    }
+
+    .slider-container {
+      height: 200px;
+      background-color: #e4e4e4;
+      position: relative;
+
+      .icons {
+        width: 70%;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      button {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        transform: translate(0, -50%);
+        border: none;
+      }
+
+      .left {
+        left: -5px;
+        background-color: #fff;
+      }
+
+      .right {
+        right: -5px;
+        background-color: #bead8e;
+      }
+    }
+
+    .description {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+        padding-bottom: 30px;
+
+      .title {
+        @include mixinsfunc.title;
+        font-size: 25px;
+        margin-bottom: 20px;
+        color: #222222;
+      }
+
+      .text {
+        @include mixinsfunc.text;
+        margin-bottom: 20px;
+      }
+
+      .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        gap: 20px;
+
+        h6 {
+          font-size: 15px;
+          color: #bdbdbd;
+          font-family: "Archivo", sans-serif;
+        }
+
+        .price {
+          color: #bead8e;
+          font-size: 20px;
+          font-family: "Archivo", sans-serif;
+          font-weight: 900;
+        }
+
+        .night {
+          font-family: "Archivo", sans-serif;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

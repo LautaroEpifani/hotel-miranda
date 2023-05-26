@@ -1,9 +1,12 @@
 @use "../mixinsfunc";
 
-.hero {
+.home-hero {
   &__container {
     background-color: #333333;
     margin-top: 80px;
+    background-image: url("../images/home/terracenight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     .text {
       display: flex;
       flex-direction: column;

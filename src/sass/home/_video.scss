@@ -30,6 +30,12 @@
 
     .video {
       @include mixinsfunc.video;
+
+      video {
+        width: 100%;
+        height: 280px;
+        object-fit: initial;
+      }
     }
     button {
       @include mixinsfunc.custom-btn;

@@ -17,6 +17,9 @@
 @use 'rooms/room-hero';
 @use 'roomDetail/doubleBed';
 @use 'roomDetail/amenities';
+@use 'roomDetail/cancelation-related';
+@use 'offers/offers-hero';
+@use 'contact/blog-contact';
 
 * {
     box-sizing: border-box;

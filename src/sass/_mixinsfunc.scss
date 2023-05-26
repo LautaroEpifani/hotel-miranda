@@ -42,12 +42,9 @@ margin-top: 60px;
 @mixin video {
   margin-top: 30px;
     margin-bottom: 30px;
-    height: 250px;
-    background-color: #e6e6e6;
     position: relative;
   
     .circle {
-      position: absolute;
       background-color: #FFF;
       position: absolute;
       left: 50%;

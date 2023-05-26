@@ -1,12 +1,12 @@
 
-const nav_link = document.querySelectorAll(".nav__item")
+// const nav_link = document.querySelectorAll(".nav__item")
 
-const route = (event) => {
-    event = event || window.event
-    event.preventDefault();
-    window.history.pushState({}, "", event.target.href)
-    // handleLocation();
-}
+// const route = (event) => {
+//     event = event || window.event
+//     event.preventDefault();
+//     window.history.pushState({}, "", event.target.href)
+//     // handleLocation();
+// }
 
 // const routes = {
 //     404: "/src/404.html",
@@ -24,8 +24,8 @@ const route = (event) => {
 //     document.getElementsByTagName("main").innerHTML = html;
 // }
 
-nav_link.addEventListener("click", route())
+// nav_link.addEventListener("click", route())
 // window.onpopstate = handleLocation;
-window.route = route
+// window.route = route
 
 // handleLocation();

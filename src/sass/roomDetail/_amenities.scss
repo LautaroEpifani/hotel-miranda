@@ -1,38 +1,70 @@
 @use "../mixinsfunc";
 
 .amenities {
-    &__container {
-        margin-top: 20px;
-        padding: 20px;
+  &__container {
+    margin-top: 20px;
+    padding: 20px;
 
-        .title {
-            @include mixinsfunc.title;
-            font-size: 25px;
-            margin-bottom: 40px;
-        }
-
-        .container-grid {
-            .row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-
-            .column {
-                display: flex;
-                flex-direction: column;
-                flex-basis: 100%;
-                flex: 1;
-                gap: 20px;
-
-                h6 {
-                    font-family: "Roboto", sans-serif;
-                    color: #777777;
-                    font-weight: 100;
-                    font-size: 14px;
-                }
-            }
-        }
+    .title {
+      @include mixinsfunc.title;
+      font-size: 25px;
+      margin-bottom: 40px;
     }
+
+    .container-grid {
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        gap: 20px;
+
+        h6 {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: "Roboto", sans-serif;
+          color: #777777;
+          font-weight: 100;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .employee {
+      margin-top: 80px;
+      text-align: center;
+
+      h1 {
+        @include mixinsfunc.title;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #222222;
+      }
+
+      h6 {
+        @include mixinsfunc.text-section;
+        color: #bdac8d;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+      p {
+        @include mixinsfunc.text;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+      }
+    }
+  }
 }

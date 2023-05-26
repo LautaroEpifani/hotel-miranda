@@ -96,7 +96,7 @@
           </li>
         </ul>
       </nav>
-      <div class="hero__container">
+      <div class="home-hero__container">
         <div class="text">
           <h6 class="description">The Ultimate Luxury Experience</h6>
           <h3 class="title">The Perfect Base For You</h3>
@@ -132,10 +132,10 @@
         <button>Book now</button>
         <div class="team">
           <div class="img">
-            <img src="" alt="" />
+            <img src="../../images/home/team.jpg" alt="" />
           </div>
           <div class="description">
-            <img src="./assets/team.png" alt="" />
+            <img src="./assets/people.png" alt="" />
             <h1>Strong Team</h1>
             <p>
               Lorem ipsum ipsum dolor sit amet consectetur adipisicing elit.
@@ -145,7 +145,7 @@
         </div>
         <div class="luxury">
           <div class="img">
-            <img src="" alt="" />
+            <img src="../../images/home/room.jpg" alt="" />
           </div>
           <div class="luxury-description">
             <div class="img-black">
@@ -263,14 +263,15 @@
               />
             </svg>
           </div>
-          <div class="slider">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div class="images-container">
+            <img src="../../images/home/luxury.jpg" alt="" class="image-slider active" id="first_image">
+            <img src="../../images/home/room4.jpg" alt="" class="image-slider" id="second_image">
+            <img src="../../images/home/room3.jpg" alt="" class="image-slider" id="third_image">
+            <img src="../../images/home/room5.jpg" alt="" class="image-slider" id="fourth_image">
+            <img src="../../images/home/room6.jpg" alt="" class="image-slider" id="fifth_image">
           </div>
-          <button class="left"><img src="./assets/left.png" alt="" /></button>
-          <button class="right"><img src="./assets/right.png" alt="" /></button>
+          <button class="btn-left" id="btn_left" value="left"></button>
+          <button class="btn-right"  id="btn_right" value="right"></button>
           <div class="slider-bottom"></div>
         </div>
         <div class="description">
@@ -293,18 +294,14 @@
           exercitatioe Eaqueeg suscipit ipsum doloremque natus laboriosam, hic
         </p>
         <div class="video">
-          <div class="circle">
-            <svg
-              width="12"
-              height="14"
-              viewBox="0 0 12 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <video  preload="none" id="video" poster="./assets/video.jpg">
+            <source type="video/mp4" src="../../assets/hotelvideo.mp4">
+          </video>
+          <div class="circle" id="circle">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1.20002 13.4006C1.11018 13.4006 1.02033 13.378 0.939083 13.3324C0.770854 13.2381 0.666687 13.0603 0.666687 12.8673V1.13398C0.666687 0.94101 0.770854 0.763145 0.939083 0.668874C1.10757 0.574343 1.31408 0.578249 1.47815 0.67877L11.0781 6.54544C11.2367 6.64257 11.3334 6.81497 11.3334 7.00065C11.3334 7.18632 11.2367 7.35872 11.0781 7.45585L1.47815 13.3225C1.39299 13.3746 1.29637 13.4006 1.20002 13.4006ZM1.73335 2.08502V11.9163L9.77711 7.00065L1.73335 2.08502Z"
-                fill="#111111"
-              />
+                fill="#111111" />
             </svg>
           </div>
         </div>
@@ -596,5 +593,7 @@
     </main>
     <script src="../../js/index.js"></script>
     <script src="../../js/router.js"></script>
+    <script src="../../js/slider.js"></script>
+    <script src="../../js/video.js"></script>
   </body>
 </html>

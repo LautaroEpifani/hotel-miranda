@@ -28,7 +28,15 @@
     }
 
     .img {
-      @include mixinsfunc.custom-bgimg;
+      margin-top: 60px;
+      text-align: center;
+      height: 280px;
+     
+      img {
+        width: 80%;
+        margin: 0 auto;
+        height: 280px;
+      }
     }
 
     .team {
@@ -40,6 +48,7 @@
       margin: 0 auto;
       text-align: center;
       margin-top: 60px;
+      
 
       h1 {
         margin-top: 20px;
@@ -58,13 +67,16 @@
     }
 
     .luxury {
+
       .img-black {
+       
         @include mixinsfunc.custom-bgimg;
-        margin-top: 0px;
+        margin-top: 0;
         background-color: #222222;
         text-align: center;
         color: #fff;
         padding-top: 40px;
+      
       }
 
       h1 {

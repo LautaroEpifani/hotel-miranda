@@ -6,10 +6,22 @@
     .food-icon {
       text-align: right;
       padding: 0;
+
+      .foodCompleteimg {
+        display: none;
+      }
     }
 
     .container-menu {
       padding: 20px;
+
+      .container-card-menu {
+        // display: none;
+      }
+
+      .container-card-menu.active {
+        display: block;
+      }
 
       .text-section {
         @include mixinsfunc.text-section;
@@ -29,7 +41,7 @@
         margin-bottom: 20px;
 
         .img {
-          width: 40%;
+          width: 35%;
           height: 130px;
           background-color: #dbdbdb;
         }
@@ -55,34 +67,67 @@
       .slider-container {
         margin-top: 40px;
         .container-buttons {
-            display: flex;
-            justify-content: end;
-            gap: 5px;
-            margin-bottom: 40px;
-            
+          display: flex;
+          justify-content: end;
+          gap: 5px;
+          margin-bottom: 40px;
         }
 
         button {
-            width: 30px;
-            height: 30px;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          width: 30px;
+          height: 30px;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
-        .left {
-            background-color: #F8F8F8;
+        .btn-left-menu {
+          background-color: #f8f8f8;
         }
 
-        .right {
-            background-color: #bead8e;
+        .btn-right-menu {
+          background-color: #bead8e;
         }
 
         .slider {
-           height: 300px;
-           background-color: #EDEDED;
+          height: 300px;
+          background-color: #ededed;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    &__container-icon {
+      margin-bottom: 40px;
+      .food-icon {
+        text-align: left;
+        margin-left: 80px;
+        .foodCompleteimg {
+          display: block;
+          width: 120px;
+          height: 120px;
+        }
+        .foodimg {
+          display: none;
+        }
+      }
+      .container-text {
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 30px;
+      }
+      .container-cards {
+        display: flex;
+        gap: 50px;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .slider-container {
+        display: none;
       }
     }
   }

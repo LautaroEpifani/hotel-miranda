@@ -17,7 +17,6 @@
     }
     .slider-container {
       height: 200px;
-      // background-color: #e4e4e4;
       position: relative;
 
       .icons {
@@ -79,7 +78,6 @@
         background-size: 5px;
         background-repeat: no-repeat;
         background-position: center;
-      
       }
 
       .slider-bottom {
@@ -117,6 +115,51 @@
       .night {
         font-family: "Archivo", sans-serif;
         font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .rooms {
+    &__container {
+      width: 70%;
+      margin: 0 auto;
+
+      .slider-container {
+        height: 400px;
+        position: relative;
+
+        .images-container {
+          height: 570px;
+          width: 90%;
+          margin: 0 auto;
+          position: relative;
+          padding-top: 0px;
+          z-index: -1;
+
+          img {
+            height: 70%;
+            width: 100%;
+            display: none;
+            position: absolute;
+            left: 0;
+          }
+
+          .image-slider.active {
+            display: block;
+          }
+        }
+        button {
+          padding: 20px;
+        }
+        .btn-left {
+          left: 30px;
+        }
+
+        .btn-right {
+          right: 30px;
+        }
       }
     }
   }

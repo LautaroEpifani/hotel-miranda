@@ -1,20 +1,11 @@
-let play_video = document.querySelector(".circle")
-let video = document.getElementById("video")
+let play_video = document.querySelector(".circle");
+let video = document.getElementById("video");
 
 const playVideo = () => {
-    video.play()
-    play_video.style.display ="none"
-}
+  video.play();
+  play_video.style.display = "none";
+  video.setAttribute("controls","controls")
+};
 
-const setVideo = () => {
-    if(video.play()) {
-        video.pause()
-    }
-    if(video.pause()) {
-        video.play()
-    }   
-    
-}
+play_video.addEventListener("click", playVideo);
 
-play_video.addEventListener("click", playVideo)
-video.addEventListener("click", setVideo)

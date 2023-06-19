@@ -6,6 +6,12 @@
     text-align: center;
     padding: 20px;
 
+    .filter-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      border-radius: 5px;
+    }
     .text-section {
       @include mixinsfunc.text-section;
       color: #777777;
@@ -18,8 +24,15 @@
     }
 
     .card-slider-container {
-        text-align: left;
-        padding: 20px;
+      text-align: left;
+      padding: 20px;
+
+      .card-slider {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
       .icon {
         margin-top: 90px;
       }
@@ -31,12 +44,6 @@
         opacity: 0.3;
       }
 
-      .card-slider {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-      }
-
       .title {
         font-size: 20px;
         margin-bottom: 20px;
@@ -45,22 +52,55 @@
 
       .text {
         @include mixinsfunc.text;
-        width: 70%;
+        width: 80%;
       }
 
       .dots {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px;
         display: flex;
         justify-content: center;
-        gap: 5px;
-        margin-top: 20px;
+        align-items: center;
+        gap: 10px;
+        .dot {
+          position: initial;
+          z-index: 1;
+          height: 6px;
+          width: 7px;
+          background-color: #ededed;
+          border-radius: 50%;
+
+          &--active {
+            background-color: #bead8e;
+          }
+        }
       }
+    }
+    .filter-container:hover {
+      background-color: #fff;
+      filter: invert(100%);
+    }
+  }
+}
 
-      .dot {
-        width: 6px;
-        height: 6px;
-        background-color: #DBDBDB;
-        border-radius: 100%;
-
+@media (min-width: 1200px) {
+  .facilities {
+    &__container {
+      .card-slider-container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .filter-container {
+          width: 30%;
+        }
+        .dots {
+          display: none;
+        }
       }
     }
   }

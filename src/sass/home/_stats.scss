@@ -18,13 +18,26 @@
       }
 
       .plus {
-        
         font-size: 15px;
       }
 
       .text {
         color: #999999;
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .stats {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 100px;
     }
   }
 }

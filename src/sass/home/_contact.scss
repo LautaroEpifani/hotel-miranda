@@ -6,7 +6,6 @@
     padding: 20px;
     padding-bottom: 10px;
     margin-bottom: 0px;
-    
 
     .title {
       @include mixinsfunc.title;
@@ -22,8 +21,8 @@
 
       .title {
         @include mixinsfunc.title;
-            font-size: 15px;
-            margin-bottom: 0px;
+        font-size: 15px;
+        margin-bottom: 0px;
       }
 
       .text {
@@ -31,6 +30,14 @@
         color: #777777;
         font-weight: 100;
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    &__container {
+      margin-top: 0px;
     }
   }
 }

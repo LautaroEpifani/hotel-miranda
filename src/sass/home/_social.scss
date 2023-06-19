@@ -30,24 +30,39 @@
     }
 
     .text {
-        font-family: 'Roboto', sans-serif;
-        color: #777777;
-        line-height: 25px;
+      font-family: "Roboto", sans-serif;
+      color: #777777;
+      line-height: 25px;
     }
 
     .social-icons {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
 
-        .bg-icon{
-            background-color: #bead8e;
-            padding-bottom: 5px;
-            padding-top: 8px;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
+      .bg-icon {
+        background-color: #bead8e;
+        padding-bottom: 5px;
+        padding-top: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .global-services-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .social {
+    &__container {
+      width: 30%;
+      margin-top: 0px;
     }
   }
 }

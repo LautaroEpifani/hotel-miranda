@@ -4,7 +4,7 @@ body {
 
 .nav {
   &__container {
-    background-color: #FFF;
+    background-color: #fff;
     margin: 0 auto;
     color: #000;
     font-family: "Raleway", sans-serif;
@@ -12,7 +12,6 @@ body {
     position: fixed;
     z-index: 1;
     width: 100%;
-    max-width: 375px;
     top: 0;
 
     .icons-container {
@@ -33,6 +32,7 @@ body {
       padding-left: 10px;
       padding-right: 40px;
       box-shadow: 0 4px 2px -2px gray;
+      position: relative;
 
       .logo {
         display: flex;
@@ -74,16 +74,22 @@ body {
   }
 
   &__list {
+   
+    position: absolute;
+    background-color: #FFF;
     display: none;
-    margin-top: 20px;
     list-style-type: none;
     text-align: left;
-    padding-left: 10px;
     cursor: pointer;
 
     &--active {
       box-shadow: none;
       display: block;
+      margin-top: 37px;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-top: 10px;
     }
   }
 
@@ -98,5 +104,75 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    
+    &__container {
+      max-width: 1920px;
+      position: initial;
+      display: flex;
+      padding-top: 80px;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: none;
+      background-color: #222222;
+      height: 80px;
+
+      .icons-container {
+        display: none;
+      }
+
+      .navbar {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        box-shadow: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #FFF;
+
+        .logo {
+          .btn {
+            display: none;
+          }
+
+          .logo-img {
+            width: 40px;
+            height: 40px;
+          }
+
+          .text-hotel {
+            font-size: 15px;
+          }
+
+          .text-miranda {
+            font-size: 15px;
+          }
+        }
+
+        .icons-nav {
+          span {
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            padding-bottom: 0px;
+            padding-left: 14px;
+            padding-right: 14px;
+          }
+        }
+      }
+    }
+
+    &__list {
+      position: initial;
+      display: flex;
+      gap: 40px;
+      margin-right: 400px;
+      margin-top: 10px;
+    }
   }
 }

@@ -15,3 +15,15 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .footer {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           width: 70%;
+           margin: 0 auto;
+        }
+    }
+}

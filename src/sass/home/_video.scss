@@ -1,7 +1,6 @@
 @use "../mixinsfunc";
 
 .video {
- 
   &__container {
     background-color: #222222;
     padding: 20px;
@@ -28,6 +27,10 @@
       color: #c2c2c2;
     }
 
+    .btn-book {
+      display: none;
+    }
+
     .video {
       @include mixinsfunc.video;
 
@@ -41,6 +44,41 @@
       @include mixinsfunc.custom-btn;
       background-color: #bead8e;
       border: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    &__container {
+      background: linear-gradient(90deg, #222222 70%, #bead8e 30%);
+      .sub-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        gap: 100px;
+      }
+      .btn-book {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .text-container {
+        width: 40%;
+      }
+
+      .video {
+        width: 40%;
+        video {
+          height: 340px;
+        }
+      }
+
+      button {
+        display: none;
+      }
     }
   }
 }

@@ -36,3 +36,12 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .services {
+    &__container {
+      width: 50%;
+      margin-top: 0px;
+    }
+  }
+}

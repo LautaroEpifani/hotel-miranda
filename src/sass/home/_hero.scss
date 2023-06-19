@@ -15,7 +15,6 @@
       color: #fff;
       padding-top: 60px;
       padding-bottom: 60px;
-     
 
       .description {
         width: 60%;
@@ -43,6 +42,7 @@
         border: none;
       }
       .learn-more {
+        margin-top: 20px;
         background-color: #333333;
         border: 1px solid #fff;
       }
@@ -98,6 +98,56 @@
         letter-spacing: 2px;
         background-color: #bead8e;
         border: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-hero {
+    &__container {
+      margin-top: 0px;
+      padding-top: 40px;
+      background-position: center;
+      .text {
+        padding-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .title {
+          width: 40%;
+          font-size: 70px;
+        }
+
+        .button-display {
+          display: flex;
+          width: 30%;
+          gap: 10px;
+        }
+
+        .learn-more {
+          margin-top: 0px;
+        }
+      }
+      .date-check {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+
+      .container-input {
+          width: 20%;
+        }
+      
+        .btn-check {
+          width: 20%;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 100px;
+        }
       }
     }
   }

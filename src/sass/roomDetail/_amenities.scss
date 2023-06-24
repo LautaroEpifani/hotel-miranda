@@ -68,3 +68,16 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+      .amenities {
+          &__container {
+            width: 50%;
+            margin-left: 200px;
+
+            .employee {
+              text-align: left;
+            }
+          }
+        }    
+}

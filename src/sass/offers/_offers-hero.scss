@@ -1,10 +1,24 @@
 @use "../mixinsfunc";
 
 .double-bed__container {
-  .image {
+  padding: 0;
+  .sub-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-text {
+    button {
+      display: none;
+    }
+  }
+
+  .offer-image {
     height: 200px;
+  }
+
+  .title-container {
     margin-bottom: 20px;
-    padding-top: 35%;
     text-align: end;
     padding-right: 10px;
 
@@ -37,10 +51,14 @@
       text-decoration: line-through;
     }
   }
+  .container-grid {
+    display: none;
+  }
 }
 
 .amenities {
   &__container {
+    margin-bottom: 100px;
     button {
       @include mixinsfunc.custom-btn;
       margin-top: 50px;
@@ -57,12 +75,13 @@
     margin-bottom: 40px;
     background-color: #222222;
 
+   
     h1 {
       @include mixinsfunc.title;
       text-align: center;
-      color: #FFF;
+      color: #fff;
       font-size: 30px;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
     }
     h5 {
       @include mixinsfunc.text-section;
@@ -72,8 +91,13 @@
       margin-bottom: 20px;
     }
 
+     .cards-desktop {
+      display: none;
+    }
+
+
     .slider-global {
-        background-color: #FFF;
+      background-color: #fff;
     }
 
     .slider-container {
@@ -119,7 +143,7 @@
       margin: 0 auto;
       margin-top: 50px;
       text-align: center;
-        padding-bottom: 30px;
+      padding-bottom: 30px;
 
       .title {
         @include mixinsfunc.title;
@@ -160,4 +184,100 @@
       }
     }
   }
+}
+
+@media (min-width: 1200px) {
+  .double-bed__container {
+    .offer-image {
+      height: 400px;
+    }
+
+    .text-container {
+      width: 100%;
+    }
+
+    .desktop {
+      display: flex;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .container-text {
+      width: 60%;
+      margin-right: 20px;
+
+      button {
+        @include mixinsfunc.custom-btn;
+        display: block;
+        width: 50%;
+        margin-top: 20px;
+        border: none;
+        background-color: #bead8e;
+      }
+    }
+    .text {
+      width: 100%;
+    }
+
+    .container-grid {
+      display: block;
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        gap: 0px;
+        margin-right: 40px;
+
+        h6 {
+          font-family: "Roboto", sans-serif;
+          color: #777777;
+          font-weight: 100;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .amenities {
+    &__container {
+      display: none;
+    }
+  }
+
+    .popular {
+      &__container {
+        padding-bottom: 100px;
+        h1 {
+            
+            font-size: 50px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+          }
+
+        .cards-desktop {
+          display: flex;
+          width: 70%;
+          margin:  0 auto;
+          gap: 40px;
+
+          .slider {
+            img {
+              height: 200px;
+              width: 100%;
+            }
+          }
+         
+        }
+
+        .slider-mobile {
+          display: none;
+        }
+      }}
 }

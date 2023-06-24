@@ -1,14 +1,34 @@
 @use "../mixinsfunc";
 
-.hero {
+.room-hero {
   &__container {
     padding-right: 20px;
+    padding-left: 20px;
+    display: block;
+    background-color: #222222;
+    margin-top: 80px;
+    padding-top: 80px;
 
-    .text.text-rooms {
+    .text.text-room {
       padding-bottom: 30px;
+      color: #fff;
 
       .title {
         margin-top: 0;
+        font-family: "Old Standard TT", serif;
+        font-size: 50px;
+        font-weight: 100;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-family: "Archivo", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
       }
     }
   }
@@ -110,4 +130,76 @@
       color: white;
     }
   }
+}
+
+@media (min-width: 1200px) {
+  // &__container {  GRID ROOMS DISPLAY
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     gap: 30px;
+  //     width: 70%;
+  //     margin: 0 auto;
+  
+  //     .room-card {
+  //       flex-grow: 1;
+  //       width: 30%;
+  //       margin-right: 20px;
+  //       margin: 0 auto;
+  //       margin-bottom: 20px;
+  
+  //       .slider-container {
+  //         .icons {
+  //           display: none;
+  //         }
+  
+  //         .slider {
+  //           width: 100%;
+  //           height: 200px;
+  //           background-color: #e4e4e4;
+  //         }
+  
+  //       }
+  //     }
+      .room-cards {
+          &__container {
+            .room-card {
+              display: flex;
+              width: 50%;
+              margin: 0 auto;
+              margin-bottom: 20px;
+              .slider-container {
+                .icons {
+                  display: none;
+                }
+
+                .slider {
+                  
+                  img {
+                    width: 300px;
+                    height: 200px;
+                  }
+                }
+               
+              }
+      
+              .description {
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-left: 20px;
+
+                .icons-desktop {
+                    width: 100%;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-bottom: 20px;
+                  }
+      
+              }
+            }
+          }
+        }
 }

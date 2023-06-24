@@ -4,7 +4,6 @@
   &__container {
     margin-top: 30px;
     padding: 20px;
-
     .title {
       @include mixinsfunc.title;
       font-size: 20px;

@@ -4,7 +4,6 @@
   &__container {
     padding: 20px;
     margin-top: 40px;
-    
 
     h4 {
       @include mixinsfunc.text-section;
@@ -49,9 +48,41 @@
     .about-image {
       margin-bottom: 30px;
       height: 250px;
-      background-color: #e6e6e6;
       width: 100%;
       margin: 0 auto;
+
+      .visible-hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .counter {
+    &__container {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 150px;
+
+      .container-cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .about-image {
+        display: flex;
+        gap: 20px;
+        img {
+          height: 300px;
+        }
+        .visible-hidden {
+          display: block;
+        }
+      }
     }
   }
 }

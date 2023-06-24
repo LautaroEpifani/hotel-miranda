@@ -21,11 +21,13 @@
     .title {
       @include mixinsfunc.title;
       margin-bottom: 0px;
+
     }
 
     .card-slider-container {
       text-align: left;
       padding: 20px;
+     
 
       .card-slider {
         margin-top: 10px;

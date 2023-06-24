@@ -1,14 +1,34 @@
 @use "../mixinsfunc";
 
-.hero {
+.about-hero {
   &__container {
     padding-right: 20px;
+    padding-left: 20px;
+    display: block;
+    background-color: #222222;
+    margin-top: 80px;
+    padding-top: 80px;
 
     .text.text-about {
       padding-bottom: 30px;
+      color: #fff;
 
       .title {
         margin-top: 0;
+        font-family: "Old Standard TT", serif;
+        font-size: 50px;
+        font-weight: 100;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        font-family: "Archivo", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
       }
     }
 
@@ -48,13 +68,15 @@
 
 .about-video {
   &__container {
-    background-color: #fff;
-    margin-top: 0;
-    padding-top: 20px;
-    padding-bottom: 0;
-
+    padding: 20px;
     .video {
       @include mixinsfunc.video;
+
+      video {
+        width: 100%;
+        height: 280px;
+        object-fit: initial;
+      }
     }
   }
 }
@@ -122,10 +144,56 @@
   }
 }
 
-.about-image {
-  margin-bottom: 30px;
-  height: 250px;
-  background-color: #e6e6e6;
-  width: 90%;
-  margin: 0 auto;
+
+
+@media (min-width: 1200px) {
+  .nav {
+    &__container {
+      background-color: #222222;
+    }
+  }
+  .about-hero {
+    &__container {
+      margin-top: 0px;
+      padding-left: 200px;
+      padding-right: 200px;
+      background-color: #333333;
+
+      .banner {
+        width: 240px;
+      }
+    }
+  }
+  .about-video {
+    &__container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .video {
+        @include mixinsfunc.video;
+
+        video {
+          width: 50%;
+          height: 380px;
+          object-fit: initial;
+        }
+      }
+    }
+  }
+
+  .about-title {
+    width: 50%;
+    font-size: 40px;
+  }
+
+    .about-cards {
+      margin-bottom: 40px;
+      .row {
+        width: 50%;
+        margin: 0 auto;
+      }
+      .column {
+        flex-direction: row;
+      }
+    }
 }

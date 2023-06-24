@@ -26,9 +26,8 @@
       font-size: 10px;
     }
 
-    .image {
-      height: 250px;
-      background-color: #efefef;
+    img {
+      width: 100%;
     }
 
     .date-check {
@@ -91,10 +90,40 @@
     }
 
     .text {
-        font-family: 'Roboto', sans-serif;
-        color: #777777;
-        font-size: 12px;
-        line-height: 25px;
+      font-family: "Roboto", sans-serif;
+      color: #777777;
+      font-size: 12px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .double-bed {
+    &__container {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 60px;
+
+      .container-desktop {
+        display: flex;
+        gap: 60px;
+
+        .description {
+          width: 50%;
+        }
+
+        .date-check {
+          &__globalcontainer {
+            width: 30%;
+          }
+        }
+      }
+
+      .text {
+        margin-top: 30px;
+        width: 50%;
+      }
     }
   }
 }

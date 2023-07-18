@@ -17,7 +17,7 @@
       display: flex;
       justify-content: left;
       gap: 40px;
-      margin-bottom: 140px;
+      margin-bottom: 80px;
 
       .title {
         @include mixinsfunc.title;
@@ -34,9 +34,10 @@
     }
 
     .image {
-      height: 200px;
-      padding: 20px;
-      background-color: #d4d4d4;
+      img {
+        height: 200px;
+        width: 100%;
+      }
     }
 
     .contact-inputs {
@@ -49,7 +50,6 @@
 
       .container-input {
         display: flex;
-        flex-direction: column;
         gap: 20px;
         margin-bottom: 20px;
 
@@ -60,11 +60,24 @@
           padding: 20px;
           color: #777777;
           background: #f8f8f8;
-          font-size: 15px;
-          font-family: "Roboto", sans-serif;
-          font-weight: 100;
           padding-bottom: 20px;
           padding-top: 20px;
+
+          input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            outline: 0;
+            box-shadow: none;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+          }
         }
 
         .input-icon {
@@ -90,72 +103,117 @@
   }
 }
 
-.contact-services {
-  &__container {
-    margin-top: 30px;
-    padding: 20px;
+// .contact-services {
+//   &__container {
+//     margin-top: 30px;
+//     padding: 20px;
 
-    .title {
-      @include mixinsfunc.title;
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
+//     .title {
+//       @include mixinsfunc.title;
+//       font-size: 20px;
+//       margin-bottom: 40px;
+//     }
 
-    .container-grid {
-      .row {
+//     .container-grid {
+//       .row {
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         width: 100%;
+//       }
+
+//       .column {
+//         display: flex;
+//         flex-direction: column;
+//         flex-basis: 100%;
+//         flex: 1;
+//         gap: 20px;
+
+//         h6 {
+//           font-family: "Roboto", sans-serif;
+//           color: #777777;
+//           font-weight: 500;
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .details-contact {
+//   &__container {
+//     margin-top: 40px;
+//     padding: 20px;
+//     padding-bottom: 10px;
+//     margin-bottom: 0px;
+
+//     .title {
+//       @include mixinsfunc.title;
+//       font-size: 20px;
+//       margin-bottom: 40px;
+//     }
+
+//     .card-contact {
+//       display: flex;
+//       justify-content: left;
+//       gap: 20px;
+//       margin-bottom: 40px;
+
+//       .title {
+//         @include mixinsfunc.title;
+//         font-size: 15px;
+//         margin-bottom: 0px;
+//       }
+
+//       .text {
+//         font-family: "Roboto", sans-serif;
+//         color: #777777;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .blog-contact {
+    &__container {
+      .card-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
       }
 
-      .column {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
-        gap: 20px;
-
-        h6 {
-          font-family: "Roboto", sans-serif;
-          color: #777777;
-          font-weight: 500;
-          font-size: 14px;
+      .image {
+        margin: 0 auto;
+        width: 60%;
+        img {
+          height: 500px;
         }
       }
-    }
-  }
-}
 
-.details-contact {
-  &__container {
-    margin-top: 40px;
-    padding: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
+      .contact-inputs {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        margin-top: 100px;
 
-    .title {
-      @include mixinsfunc.title;
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-
-    .card-contact {
-      display: flex;
-      justify-content: left;
-      gap: 20px;
-      margin-bottom: 40px;
-
-      .title {
-        @include mixinsfunc.title;
-        font-size: 15px;
-        margin-bottom: 0px;
-      }
-
-      .text {
-        font-family: "Roboto", sans-serif;
-        color: #777777;
-        font-weight: 500;
+        .container-inputs {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          gap: 30px;
+          width: 100%;
+          
+          .container-input {
+            width: 60%;
+            margin: 0 auto;
+          }
+        }
+        .btn-check {
+          margin-top: 150px;
+          width: 30%;
+        }
+       
       }
     }
   }

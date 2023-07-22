@@ -3,6 +3,7 @@ let slideIndexTwo = 0;
 let slides_two = document.querySelectorAll(".filter-container");
 let dots = document.querySelectorAll(".dot");
 
+let viewPort;
 let timeoute = null;
 
 function removeStylesFeatures() {
@@ -28,20 +29,20 @@ function autoSlideFeautres() {
     } else {
       slideIndexTwo = 0;
     }
-
     slides_two[slideIndexTwo].style.display = "block";
     dots[slideIndexTwo].style.backgroundColor = "#BEAD8E";
-    timeoute = setTimeout(autoSlideFeautres, 4000);
-  } else {
-    return;
+    clearTimeout(timeoute);
+    timeoute = setTimeout(autoSlideFeautres, 3000);
   }
 }
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth < 1200) {
+window.addEventListener("resize", function (event) {
+  viewPort = window.innerWidth;
+  if (viewPort < 1200) {
     removeStylesFeatures();
     addOnLoad(autoSlideFeautres());
-  } else {
+  }
+  if (viewPort > 1200) {
     addStylesFeatures();
   }
 });

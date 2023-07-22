@@ -3,11 +3,11 @@
   <br>
   <a ><img src="https://i.ibb.co/f8QQjmW/logo.png" alt="logo" width="200"></a>
   <br>
-  Hotel Miranda Web Page
+  Hotel Miranda
   <br>
 </h1>
 
-<h4 align="center">Hotel Miranda</h4>
+<h4 align="center">Hotel Miranda web page</h4>
 
 
 ## How To Use

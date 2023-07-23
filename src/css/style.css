@@ -116,7 +116,14 @@
   color: #222222;
   text-align: center;
 }
-.about-cards .column .card.brown {
+.about-cards .column .card .hover {
+  display: none;
+  margin: 0 auto;
+}
+.about-cards .column .card .normal {
+  margin: 0 auto;
+}
+.about-cards .column .card:hover {
   background-color: #bead8e;
 }
 .about-cards .column h6 {
@@ -124,9 +131,7 @@
   text-transform: uppercase;
   color: #777777;
   font-size: 10px;
-}
-.about-cards .column .brown {
-  color: #fff;
+  margin-top: 10px;
 }
 .about-cards .column .images {
   width: 100%;

@@ -112,21 +112,26 @@
       width: 90%;
       color: #222222;
       text-align: center;
-    }
 
-    .card.brown {
-      background-color: #bead8e;
-    }
+      .hover {
+        display: none;
+        margin: 0 auto;
+      }
 
+      .normal {
+        margin: 0 auto;
+      }
+
+      &:hover {
+        background-color: #bead8e;
+      }
+    }
     h6 {
       font-family: "Archivo", sans-serif;
       text-transform: uppercase;
       color: #777777;
       font-size: 10px;
-    }
-
-    .brown {
-      color: #fff;
+      margin-top: 10px;
     }
 
     .images {
@@ -143,8 +148,6 @@
     }
   }
 }
-
-
 
 @media (min-width: 1200px) {
   .nav {
@@ -186,14 +189,14 @@
     font-size: 40px;
   }
 
-    .about-cards {
-      margin-bottom: 40px;
-      .row {
-        width: 50%;
-        margin: 0 auto;
-      }
-      .column {
-        flex-direction: row;
-      }
+  .about-cards {
+    margin-bottom: 40px;
+    .row {
+      width: 50%;
+      margin: 0 auto;
     }
+    .column {
+      flex-direction: row;
+    }
+  }
 }

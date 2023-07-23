@@ -39,8 +39,8 @@
     margin-top: 40px;
     padding: 20px;
     .room-card {
-      margin-bottom: 60px;
       .slider-container {
+        margin-bottom: 60px;
         height: 200px;
         background-color: #e4e4e4;
         position: relative;
@@ -76,6 +76,12 @@
           @include mixinsfunc.title;
           font-size: 25px;
           margin-bottom: 20px;
+
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+
         }
 
         .text {

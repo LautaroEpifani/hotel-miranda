@@ -156,7 +156,7 @@
     background-color: #333333;
   }
   .about-hero__container .banner {
-    width: 240px;
+    width: 260px;
   }
   .about-video__container {
     text-align: center;
@@ -478,10 +478,8 @@
   margin-top: 40px;
   padding: 20px;
 }
-.room-cards__container .room-card {
-  margin-bottom: 60px;
-}
 .room-cards__container .room-card .slider-container {
+  margin-bottom: 60px;
   height: 200px;
   background-color: #e4e4e4;
   position: relative;
@@ -514,6 +512,10 @@
   font-weight: 100;
   font-size: 25px;
   margin-bottom: 20px;
+}
+.room-cards__container .room-card .description .title a {
+  text-decoration: none;
+  color: #000;
 }
 .room-cards__container .room-card .description .text {
   color: #777777;

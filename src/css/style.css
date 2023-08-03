@@ -478,14 +478,17 @@
   margin-top: 40px;
   padding: 20px;
 }
+.room-cards__container .room-card {
+  margin-bottom: 80px;
+}
 .room-cards__container .room-card .slider-container {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   height: 200px;
   background-color: #e4e4e4;
   position: relative;
 }
 .room-cards__container .room-card .slider-container .slider img {
-  width: 300px;
+  width: 100%;
   height: 200px;
 }
 .room-cards__container .room-card .slider-container .icons {
@@ -1020,6 +1023,10 @@
 .popular__container .slider-container .right {
   right: -5px;
   background-color: #bead8e;
+}
+.popular__container .slider-container .slider img {
+  height: 200px;
+  width: 100%;
 }
 .popular__container .description {
   width: 80%;

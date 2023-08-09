@@ -152,6 +152,11 @@
       text-align: center;
       padding-bottom: 30px;
 
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
       .title {
         @include mixinsfunc.title;
         font-size: 25px;

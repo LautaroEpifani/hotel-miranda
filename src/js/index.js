@@ -14,3 +14,4 @@ close.addEventListener("click", () => {
     open.classList.remove("btn__menu--click")
     close.classList.add("btn__close--click")
 })
+

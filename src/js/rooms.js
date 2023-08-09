@@ -1,6 +1,7 @@
 
 let roomsList = [
     {
+      id: 1,
       title: "Queen Bed A-12324",
       image: "../../images/home/room2.jpg",
       room_type: "Single Bed",
@@ -26,6 +27,7 @@ let roomsList = [
       status: "Avaliable",
     },
     {
+      id: 2,
       title: "Classic Double Bed B-12324",
       image: "../../images/home/room3.jpg",
       room_type: "Double Bed",
@@ -51,6 +53,7 @@ let roomsList = [
       status: "Booked",
     },
     {
+      id: 3,
       title: "Luxury Room  D-1231",
       room_type: "Double Superior",
       image: "../../images/home/room7.jpg",
@@ -76,8 +79,9 @@ let roomsList = [
       status: "Avaliable",
     },
     {
+      id: 4,
       title: "Luxury Suite Room  X-1342",
-      image: "../../images/home/room5.jpg",
+      image: "../../images/home/roomOne.jpg",
       room_type: "Suite",
       room_number: 5,
       amenities: [
@@ -101,6 +105,7 @@ let roomsList = [
       status: "Avaliable",
     },
     {
+      id: 5,
       title: "King's Bed X-2342",
       image: "../../images/home/room6.jpg",
       room_type: "Single Bed",
@@ -235,7 +240,7 @@ document.querySelector(".room-cards").innerHTML = roomsList.map(room =>
       </div>
     </div>
     <div class="description">
-      <h1 class="title"><a href="https://lautaroepifani.github.io/hotel-miranda/src/pages/roomDetail/index.html">${room.title}</a></h1>
+      <h1 class="title"><a class="id" href="https://lautaroepifani.github.io/hotel-miranda/src/pages/roomDetail/index.html">${room.title}</a></h1>
       <p class="text">
       ${room.description}
       </p>

@@ -69,6 +69,12 @@
       margin: 0 auto;
       margin-top: 50px;
       margin-bottom: 40px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
     
       .title {
         @include mixinsfunc.title;

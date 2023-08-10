@@ -8,6 +8,10 @@
     background-color: #222222;
     margin-top: 80px;
     padding-top: 80px;
+    background-image: url("../assets/playa.jpg");
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .text.text-about {
       padding-bottom: 30px;
@@ -162,10 +166,7 @@
       padding-left: 200px;
       padding-right: 200px;
       background-color: #333333;
-      background-image: url("../assets/playa.jpg");
-      background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+      
 
       .banner {
         width: 260px;

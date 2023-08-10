@@ -67,8 +67,11 @@
           color: #1D1D1D;
           font-family: “Helvetica”, arial, sans-serif;
           font-size: 12px;
-          border:1px solid #ECF0F1;
-          background:#ECF0F1;
+          border: none;
+          color: transparent;
+          border-bottom:1px solid #bead8e;
+          color: #FFF;
+          background-color: #222222;
           padding: 6px;
           display: inline-block;
           visibility: visible;
@@ -76,12 +79,12 @@
           }
 
           .input:focus {
-            color: #495057;
-            background-color: #FFFFFF;
-            border-color: #bead8e;
             outline: 0;
-            box-shadow: 0 0 0 0.2rem rgba(157, 134, 74, 0.779);
             border-radius: 1px;
+            }
+
+            .input {
+              color-scheme: dark;
             }
         
       
